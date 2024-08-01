@@ -1,0 +1,2162 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <title>Law Firm</title>
+    <style>
+        /* Custom CSS */
+        .carousel {
+            position: relative;
+        }
+
+        .carousel-item img {
+            width: 100vw;
+            /* عرض كامل للشاشة */
+            height: 121vh;
+            /* ارتفاع كامل للشاشة */
+            object-fit: cover;
+            /* ملء الصورة بدون تشويه */
+        }
+
+        .carousel-caption {
+          
+            padding: 10px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 50%;
+            margin-bottom: 45px;
+        }
+
+        .carousel-caption h5,
+        .carousel-caption p {
+            color: #fff;
+        }
+
+        .carousel-caption .btn {
+            margin: 5px;
+            width: 211px;
+        }
+
+        .carousel-indicators {
+    position: absolute;
+    bottom: 120px;
+    left: 40em;
+    width: 100%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+        .carousel-indicators button {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .carousel-indicators .active {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        
+        h5 {
+                font-size: 30px;
+                margin-bottom: 45px;
+            }
+         .col{
+
+                color: #14a9ac;
+                letter-spacing: 0.94px;  
+            }
+            .btn-primary {
+    background-color: #25D366;
+}
+
+.btn-primary:hover {
+    background-color: #1fbd5a; 
+}
+
+.btn-secondary {
+    background-color: #14A9AC;
+}
+
+.btn-secondary:hover {
+    background-color: #12868a; 
+}
+
+.btn-success {
+    background-color: #34373847;
+}
+
+.btn-success:hover {
+    background-color: #2b2d2e47;
+}
+
+
+
+        @media (max-width: 768px) {
+            .carousel {
+                height: 100%;
+            }
+
+            .carousel-item img {
+                width: 100vw;
+                /* عرض كامل للشاشة */
+                height: 121vh;
+                /* ارتفاع كامل للشاشة */
+                object-fit: cover;
+                /* ملء الصورة بدون تشويه */
+            }
+
+            .carousel-caption {
+                width: 90%;
+                font-size: 14px;
+                padding: 5px;
+                bottom: 50%;
+            }
+
+            .carousel-caption p {
+                font-size: 12px;
+            }
+
+            .carousel-caption .btn {
+                padding: 5px 10px;
+                font-size: 12px;
+            }
+        }
+
+        .navbar .text-wrapper-3 {
+            text-decoration: none;
+        }
+
+        .text-wrapper1 {
+            text-decoration: none;
+        }
+
+        @media (max-width:600px) {
+            .section4 {
+                max-width: 90% !important;
+                padding-left: 50px;
+            }
+
+            .section4 p {
+                width: 100% !important;
+            }
+        }
+
+        .section5 {
+            direction: rtl;
+            display: flex;
+            gap: 2px;
+            flex-wrap: wrap;
+            /* Ensures content wraps on smaller screens */
+        }
+
+        .section5 .flex-1 {
+            flex: 1;
+        }
+
+        .section5 h3 {
+            text-align: right;
+        }
+
+        .section5 p {
+            width: 100%;
+            /* Reset width to 100% */
+        }
+
+        .section5 video {
+            width: 100%;
+            /* Ensure iframe takes full width of its container */
+            height: auto;
+            /* Adjust height to maintain aspect ratio */
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .section5 {
+                flex-direction: column-reverse;
+                /* Stack items vertically */
+            }
+
+            .section5 .flex-1 {
+                max-width: 90% !important;
+            }
+
+            .section5 p {
+                width: 100% !important;
+                /* Adjust as needed to fit content */
+            }
+        }
+
+        /* Ensure each flex item takes up half the width of the container on larger screens */
+        @media (min-width: 768px) {
+            .section5 .flex-1 {
+                max-width: 50%;
+            }
+
+            .section5 p {
+                width: 100%;
+                /* Adjust as needed to fit content */
+            }
+        }
+
+        .section6 {
+            direction: rtl;
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 30px;
+            flex-wrap: wrap;
+            background-color: #0f2939f2;
+        }
+
+        .component-4 {
+            background-color: #0e2e3a;
+            color: white;
+            padding: 20px;
+            flex: 1;
+            max-width: 30%;
+            /* Default width for large screens */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .img-3 {
+            width: 50px;
+            height: 50px;
+        }
+
+        .frame-19 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .frame-20 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .text-wrapper-11 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .rectangle-3 {
+            width: 30px;
+            height: 2px;
+            background-color: white;
+        }
+
+        p {
+            text-align: right;
+        }
+
+        @media (max-width: 768px) {
+            .component-4 {
+                max-width: 100%;
+                /* Full width for small screens */
+                margin-bottom: 20px;
+            }
+
+            .section6 {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .section7 {
+            padding: 20px;
+        }
+
+        .frame-22 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .text-wrapper-9 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .rectangle-3 {
+            width: 50px;
+            height: 3px;
+            background-color: black;
+            margin: 10px auto;
+        }
+
+        .text-wrapper-15 {
+            font-size: 18px;
+        }
+
+        .frame-23 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+
+        }
+
+        .frame-24 {
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-sizing: border-box;
+            width: 30%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .frame-24 img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .frame-25,
+        .frame-26,
+        .frame-27 {
+            text-align: center;
+        }
+
+        .text-wrapper-16 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .text-wrapper-17 {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .frame-23 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .frame-24 {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .section8 {
+            padding: 50px;
+            /* max-width: 1200px; */
+            /* margin: auto; */
+            background-color: #0926380a;
+        }
+
+        .frame-22 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .text-wrapper-9 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .rectangle-3 {
+            width: 50px;
+            height: 3px;
+            background-color: black;
+            margin: 10px auto;
+        }
+
+        .text-wrapper-15 {
+            font-size: 18px;
+        }
+
+        .frame-29 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .frame-31 {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .frame-31 img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .text-wrapper-18 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .text-wrapper-20 {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .frame-29 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .frame-29 {
+                grid-template-columns: 1fr;
+            }
+
+            .text-wrapper-9 {
+                font-size: 20px;
+            }
+
+            .text-wrapper-15 {
+                font-size: 16px;
+            }
+
+            .text-wrapper-18 {
+                font-size: 14px;
+            }
+
+            .text-wrapper-20 {
+                font-size: 12px;
+            }
+        }
+
+        .section9 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+            background-color: #0f2939f2;
+        }
+
+        .left-section {
+            flex: 1;
+            padding-top: 150px;
+            color: white;
+        }
+
+        .right-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .feature {
+            flex: 1 1 calc(50% - 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .feature img {
+            max-width: 50px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+
+            .left-section,
+            .right-section {
+                flex: 1 1 100%;
+            }
+
+            .feature {
+                flex: 1 1 100%;
+            }
+        }
+        .section10 {
+    margin: 20px;
+}
+
+.team-section {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    /* overflow: hidden; */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.slide img {
+    width: 250px;
+    height: auto;
+    /* border-radius: 50%; */
+    margin-bottom: 10px;
+}
+
+.slide h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.slide h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.slide p {
+    font-size: 1em;
+    text-align: center;
+    width: 60em;
+}
+.but{
+    margin-top: 40px;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+button.prev {
+    right: 100%;
+    left: -5%;
+}
+
+button.next {
+    left: 100%;
+    right: -5%;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5em;
+        margin-left: auto;
+    }
+
+    .header p {
+        font-size: 0.9em;
+    }
+
+    .slide h2 {
+        font-size: 1.2em;
+    }
+
+    .slide h3 {
+        font-size: 1em;
+    }
+
+    .slide p {
+        font-size: 0.9em;
+    }
+
+    .header div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .header h1 {
+        margin: 0;
+    }
+
+  
+    .line{
+        margin-right: -9em;                
+            }
+}
+
+
+       .section11 {
+    padding: 20px;
+    color: #ddd;
+    background-color: #0f2939f2;
+}
+
+.team-section {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.slider .item {
+    text-align: center;
+    padding: 20px;
+}
+
+.slider .item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.slider .item p {
+    font-size: 20px;
+  
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #085357f2;
+    border: 1px solid #0f2939f2;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.grid-item h3 {
+    margin: 0 0 10px;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+.grid-item p {
+    margin: 0 0 10px;
+    font-size: 1em;
+}
+
+.grid-container .grid-item .step-number {
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: #289298f2;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header h1 {
+        font-size: 1.5em;
+        margin-left: auto;
+    }
+
+    .header p {
+        font-size: 0.9em;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .grid-item {
+        order: 0;
+    }
+
+    .grid-item.x1 {
+        order: 1;
+    }
+
+    .grid-item.x2 {
+        order: 2;
+    }
+
+    .grid-item.x3 {
+        order: 3;
+    }
+
+    .grid-item.x4 {
+        order: 4;
+    }
+
+    .grid-item.x5 {
+        order: 5;
+    }
+
+    .grid-item.x6 {
+        order: 6;
+    }
+
+    .grid-item h3 {
+        font-size: 1.2em;
+    }
+
+    .grid-item p {
+        font-size: 0.9em;
+    }
+    .line{
+        margin-right: -10em;}
+}
+
+
+        /* section 13 */
+        .section13 {
+            margin: 20px;
+        }
+
+        .team-section {
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+      
+        }
+
+        .swiper-container {
+            padding: 20px;
+        }
+
+        .swiper-slide {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .swiper-slide .stars {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .swiper-slide .stars h3 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: right;
+        }
+
+        .swiper-slide .stars .fa-star {
+            margin-left: 5px;
+        }
+
+        .swiper-slide p {
+            margin: 10px 0;
+            font-size: 1em;
+        }
+
+        .swiper-slide .quote-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5em;
+                margin-left: auto;
+            }
+
+            .swiper-slide h3 {
+                font-size: 1.2em;
+            }
+
+            .swiper-slide p {
+                font-size: 0.9em;
+            }
+            .lin{
+margin-right: 3em;            }
+          
+        }
+
+        .section14 {
+            display: flex;
+            justify-content: space-between;
+            padding: 70px;
+        }
+
+        .contact-form {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(93deg, #14A9AC -95.72%, #194B6A 102.84%);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+
+        .contact-info {
+            flex: 1;
+            background-color: #1D2D50;
+            color: white;
+            padding-right: 50px;
+            padding-top: 40px;
+            border-radius: 10px;
+        }
+
+        .contact-info h2,
+        .contact-info h3 {
+            margin: 0 0 10px;
+        }
+
+        .contact-info p {
+            margin: 0 0 20px;
+        }
+
+        .social-media {
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .social-media img {
+            width: 90%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .section14 {
+                padding: 0;
+            }
+
+            .contact-form {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .xx,
+            .yy {
+                max-width: 100%;
+            }
+
+            .xx {
+                padding: 10px;
+            }
+
+            .contact-info {
+                padding-bottom: 20px;
+            }
+            .linee{
+                margin-right: 0em;
+            }
+        }
+
+
+        .up {
+            position: fixed;
+            bottom: 15px;
+            right: -45px;
+            background-color: #0c6062de;
+            font-weight: bold;
+            /* font-size: 10px; */
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            cursor: pointer;
+            z-index: 1000;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: 0.3s;
+        }
+
+        .show {
+            right: 2.5rem;
+        }
+
+        .watts {
+            position: fixed;
+            bottom: 15px;
+            left: 2.5rem;
+            background-color: rgb(21, 197, 21);
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1000;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: 0.3s;
+        }
+
+        /* section 15 style */
+        /* .section15 {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    min-width: 280px;
+    max-width: 33%;
+    box-sizing: border-box;
+}
+
+.text-wrapper {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+.frame-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.frame-3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-wrapper-2 {
+    text-decoration: none;
+    color: #333;
+}
+
+.text-wrapper-2.active {
+    font-weight: bold;
+}
+
+.caret-left {
+    width: 16px;
+    height: 16px;
+}
+    
+
+.law-office-info {
+    flex: 1 100%;
+    margin-top: 20px;
+}
+
+.law-office-info p {
+    margin: 0 0 20px 0;
+    line-height: 1.6;
+}
+
+.social-icons a {
+    margin: 0 5px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.logo-container img {
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+    .column {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .law-office-info p {
+        font-size: 14px;
+    }
+
+    .logo-container img {
+        width: 80px;
+    }
+} */
+
+
+        .section15 a {
+            text-decoration: none;
+            color: gray;
+            font-size: 14px;
+        }
+
+        .section15 i {
+            font-size: 22px;
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                gap: 10px;
+
+            }
+
+            .hh {
+                display: flex;
+                gap: 40px;
+                justify-content: space-between;
+            }
+        }
+
+        .footer {
+            background-color: rgb(21, 20, 20);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                flex-direction: column-reverse;
+                gap: 3px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                align-items: center;
+                font-size: 12px;
+            }
+        }
+
+        /* div .frame-25 .text-wrapper-17{
+   background-color: rgba(223, 223, 223, 0.20);
+ }
+  */
+  .frame-5 {
+    display: flex;
+    justify-content: space-between;
+   margin-top: 60px;
+    
+}
+
+.frame-6 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: -60px;
+}
+
+.component-2, .component-3 {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.rectangle {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.frame-3 {
+    margin-top: 10px;
+}
+
+.element {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-wrapper-5 {
+    font-size: 18px;
+}
+
+.but {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.but a {
+    margin: 0 10px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="div">
+            <div class="div-2">
+                <a href="tel:+966551161140" class="text-wrapper1">اتصال مباشر</a>
+                <a href="tel:+966551161140">
+                    <img class="phone-call" src="img/phonecall.svg" alt="Phone Call" />
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/%D9%85%D8%AD%D8%A7%D9%85%D9%8A%D9%87-%D9%85%D8%B1%D8%AE%D8%B5%D9%87-%D9%86%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%A8%D9%83%D8%B1%D9%8A-51527023a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    target="_blank" class="social-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/nwal_lawyer" target="_blank" class="social-icon">
+                    <img src="img/X.svg" style="width: 24px;height: 24px;" />
+                </a>
+
+
+                <a style="width: 20px; height: 20px;" href=" https://www.tiktok.com/@lawyer.na
+          " target="_blank" class="social-icon">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="http://wa.me/966551161140" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp" style="width: 25px; height: 25;"></i>
+                </a>
+            </div>
+        </div>
+        <header class="header">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <button class="button" onclick="window.location.href='#consultation';">
+                <div class="text-wrapper-2">اطلب إستشارتك</div>
+            </button>
+            <div class="navbar">
+                <a href="#contact" class="text-wrapper-3">تواصل معنا</a>
+                <a href="#contract" class="text-wrapper-3">إجراءات التعاقد</a>
+                <a href="#success-stories" class="text-wrapper-3">قصص نجاح العملاء</a>
+                <a href="#team" class="text-wrapper-3">فريق العمل</a>
+                <a href="#why-us" class="text-wrapper-3">لماذا تختار مكتبنا</a>
+                <a href="#services" class="text-wrapper-3">خدماتنا القانونية</a>
+                <a href="#about" class="text-wrapper-3">نبذة عنا</a>
+            </div>
+            <div class="image-wrapper">
+                <img class="image" src="img/1.png" alt="Logo" />
+            </div>
+
+            <div class="dropdown-menu menuu"  id="menuu" style="z-index: 1000;width: 80%; background-color: #003366; color: white;">
+                <div style="display: flex;justify-content: space-between;align-items: center;">
+                    <img class="image"  style="margin: 50px;" src="img/1.png" alt="Logo" />
+                   <img src="img/close.png" onclick="closeMenu()" id="close" style="width: 30px; height: 30px; transform: translate(-280px,-107px);"/>
+                </div>
+                <div style="transform: translateY(-50px); " class="mb-5">
+                <div >
+                    <h3 style="text-align: left; margin: 30px; "> القائمة</h3>
+                    <div class="display:flex">
+                        <div style="background-color:#14A9AC;width:45px;height: 5px; transform: translate(-27px,-20px);"></div>
+    
+                    </div>
+    
+                </div>
+               
+                <a href="#contact" class="dropdown-item">تواصل معنا</a>
+                <a href="#contract" class="dropdown-item">إجراءات التعاقد</a>
+                <a href="£success-stories" class="dropdown-item">قصص نجاح العملاء</a>
+                <a href="#team" class="dropdown-item">فريق العمل</a>
+                <a href="#why-us" class="dropdown-item">لماذا تختار مكتبنا</a>
+                <a href="#services" class="dropdown-item">خدماتنا القانونية</a>
+                <a href="#about" class="dropdown-item">نبذة عنا</a>
+            </div>
+        </div>
+        </header>
+    </div>
+
+    <!-- Carousel Code Starts Here -->
+    <div id="myCarousel" class="carousel slide three" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+
+        <div class="carousel-inner" style="width: 100vw; height: 100vh; margin-bottom: 100px;">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" >
+                <img class="d-block w-100" src="img/image-2.png" alt="First slide">
+                <div class="carousel-caption d-none d-md-block" style=" margin-bottom: -150px;">
+                    <h5>مكتب الاستاذة <span class="col">نوال البكري</span> للمحامة</h5>
+                    <p>لا تترددوا في طرق أبوابنا للحصول على المشورة القانونية المتخصصة. نحن هنا لتقديم الدعم الكامل والمشورة التي تحتاجونها لحماية مصالحكم</p>
+                    <div class="but">
+                        <a href="https://wa.me/1234567890" class="btn btn-primary">واتساب</a>
+                        <a href="tel:+1234567890" class="btn btn-secondary">اتصال مباشر</a>
+                        <a href="booking.html" class="btn btn-success">احجز استشارتك</a>
+                    </div>
+            
+                    <div class="frame-5">
+                        <div class="frame-6">
+                            <div class="component-2">
+                                <img class="rectangle" src="img/rectangle-4.png" alt="Cases">
+                                <div class="frame-3">
+                                    <div class="element">+1000</div>
+                                    <div class="text-wrapper-5">قـضـــــــــيـة</div>
+                                </div>
+                            </div>
+                            <div class="component-2">
+                                <img class="rectangle" src="img/rectangle-4-1.png" alt="Employees">
+                                <div class="frame-3">
+                                    <div class="element">+25</div>
+                                    <div class="text-wrapper-5">مـوظــــــــف</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frame-6">
+                            <div class="component-2">
+                                <img class="rectangle" src="img/rectangle-4-2.png" alt="Consultations">
+                                <div class="frame-3">
+                                    <div class="element">+5000</div>
+                                    <div class="text-wrapper-5">إستـشـــــارات</div>
+                                </div>
+                            </div>
+                            <div class="component-3">
+                                <img class="rectangle" src="img/rectangle-4-3.png" alt="Satisfied Clients">
+                                <div class="frame-3">
+                                    <div class="element">+4500</div>
+                                    <div class="text-wrapper-5">عــمــــيل راضــــي</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider2.png" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>مستشارك <span class="col"> القانوني</span>  لحماية حقوقك</h5>
+                    <p>لا تترددوا في طرق أبوابنا للحصول على المشورة القانونية المتخصصة. نحن هنا لتقديم الدعم الكامل
+                        والمشورة التي تحتاجونها لحماية مصالحكم واتخاذ القرارات الصائبة. بفضل خبرتنا الواسعة، سنساعدكم في
+                       مواجهة التحديات القانونية بثقة واطمئنان</p>
+                        <div class="but">
+                            <a href="https://wa.me/1234567890" class="btn btn-primary">واتساب</a>
+                            <a href="tel:+1234567890" class="btn btn-secondary">اتصال مباشر</a>
+                            <a href="booking.html" class="btn btn-success">احجز استشارتك</a>
+                        </div>
+                  
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider3.png" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>نقدم لكم 
+                        <span class="col">  باقة واسعة </span>  
+                         من الخدمات الاستشارية</h5>
+                    <p>تصحيح الأوضاع القانونية قبل فوات الأوان. دعونا نساعدكم في اتخاذ الخطوات القانونية الصحيحة</p>
+                        <div class="but">
+                            <a href="https://wa.me/1234567890" class="btn btn-primary">واتساب</a>
+                            <a href="tel:+1234567890" class="btn btn-secondary">اتصال مباشر</a>
+                            <a href="booking.html" class="btn btn-success">احجز استشارتك</a>
+                        </div>
+                  
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider4.png" alt="Fourth slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>رسالتنا <span class="col">   السعي وراء الحق </span>    حيثما كان</h5>
+                    <p>مستشارك القانوني في المملكة العربية السعودية. نحن نؤمن بالعدالة ونسعى لتحقيقها بكل جهد</p>
+                         <div class="but">
+                            <a href="https://wa.me/1234567890" class="btn btn-primary">واتساب</a>
+                            <a href="tel:+1234567890" class="btn btn-secondary">اتصال مباشر</a>
+                            <a href="booking.html" class="btn btn-success">احجز استشارتك</a>
+                        </div>
+                  
+                </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider5.png" alt="Fifth slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>اختر <span class="col"> الخبرة</span> ، اختر  <span class="col"> دارة المشورة</span> </h5>
+                    <p>احصل على أفضل الخدمات القانونية في المملكة. نقدم لك حلاً قانونيًا مبتكرًا بأفضل فريق من المحامين
+                        ذوي الكفاءة العالية. دعم قانوني لا مثيل له</p>
+                        <div class="but">
+                            <a href="https://wa.me/1234567890" class="btn btn-primary">واتساب</a>
+                            <a href="tel:+1234567890" class="btn btn-secondary">اتصال مباشر</a>
+                            <a href="booking.html" class="btn btn-success">احجز استشارتك</a>
+                        </div>
+                  
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" style="position: absolute; left: 20px; top: 30%;" type="button"
+            data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" style="position: absolute;left: 482%;top: 30%;"
+            data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- after section slider  -->
+    <div class="section4" style="text-align: center; margin-bottom: 100px;">
+        <div class="section4Left">
+            <img class="img" src="img/frame-1-1.svg" width="140px" height="140px" />
+        </div>
+        <p class="text-wrapper-8 section4Right"
+            style="width: 54%;display: inline-block; align-items: center; margin-top: 20px;">
+            إدراكاً منا لعظمة المهنة التي نعمل بها والرسالة المكلفين بإيصالها كوننا
+            حاملي راية الدفاع عن الحقوق، قمنا بإنشاء مكتب المحامية نوال البكري
+            للمحاماة والاستشارات القانونية. بفضل نخبة من المحامين والمستشارين
+            القانونيين في المملكة العربية السعودية، سعينا جاهدين لتقديم أفضل الخدمات
+            القانونية وبناء علاقات عمل مهنية واحترافية عالية، تعتمد على خبراتنا
+            وتجاربنا.
+        </p>
+    </div>
+    <div class="section5 mx-4 my-2" id="about" >
+      <div class=" flex-1 mt-5 xy">
+        <h3>من نحن</h3>
+        <div style="background-color:#14A9AC;width:45px;height: 5px;"></div>
+        <p style="width: 80%;">
+            مكتب المحامية نوال البكري للمحاماة والاستشارات القانونية هو أحد أبرز المكاتب القانونية في المملكة
+            العربية السعودية، حيث نسعى لتقديم خدمات قانونية عالية الجودة تغطي مجموعة واسعة من التخصصات القانونية.
+            تأسس مكتبنا على مبدأ الالتزام التام بتحقيق العدالة وتوفير الدعم القانوني الأمثل لعملائنا، مستندين على
+            قيم النزاهة، الاحترافية، والشفافية.
+        </p>
+    </div>
+    <div class="flex-1 xyz">
+        <video width="600px" controls poster="img/poster.png">
+            <source src="img/video.mp4" type="video/mp4">
+           
+        </video>
+    </div>
+    
+    </div>
+    <div class="section6" style="margin-top: 100px;">
+
+        <div class="component-4 messageLeft">
+            <img class="img-3" src="img/paperplanetilt.svg" />
+            <div class="frame-19 ">
+                <div class="frame-20">
+                    <div class="text-wrapper-11">رسالتنا</div>
+                    <!-- <div class="rectangle-3"></div> -->
+                </div>
+                <p class="text-wrapper-13">
+                    نحن في مكتب المحامية نوال البكري نؤمن بأن العدالة هي أساس الاستقرار الاجتماعي والاقتصادي. لذلك، نسعى
+                    جاهدين لتقديم خدمات قانونية رفيعة المستوى تساعد عملاءنا على تحقيق أهدافهم بفاعلية وكفاءة. فريقنا
+                    المكون من نخبة من المحامين والمستشارين القانونيين ذوي الخبرة والاحترافية يعمل بجد لتقديم أفضل الحلول
+                    القانونية المبتكرة والمتكاملة.
+                </p>
+            </div>
+        </div>
+        <div class="component-4 messageCenter">
+            <img class="img-3" src="img/eye.svg" />
+            <div class="frame-19">
+                <div class="frame-20">
+                    <div class="text-wrapper-11">رؤيتنا</div>
+                    <!-- <div class="rectangle-3"></div> -->
+                </div>
+                <p class="text-wrapper-14">
+                    أن نكون الخيار الأول والأفضل للعملاء الذين يبحثون عن خدمات قانونية متميزة في المملكة العربية
+                    السعودية.
+                    نطمح إلى تعزيز النظام القانوني والمساهمة في تطوير البيئة القانونية في المملكة من خلال تقديم استشارات
+                    قانونية مبنية على المعرفة العميقة بالقوانين المحلية والدولية.
+                </p>
+            </div>
+        </div>
+        <div class="component-4 messageRight">
+            <img class="img-3" src="img/scales.svg" />
+            <div class="frame-19">
+                <div class="frame-20">
+                    <div class="text-wrapper-11">قيمنا</div>
+                    <!-- <div class="rectangle-3"></div> -->
+                </div>
+                <p class="text-wrapper-12">
+                     النزاهة: نلتزم بأعلى معايير الأخلاق والمهنية في جميع تعاملاتنا. <br /> الالتزام: نسعى جاهدين
+                    لتحقيق
+                    العدالة وحماية حقوق عملائنا. <br /> الاحترافية: نقدم خدمات قانونية بجودة عالية تعتمد على الخبرة
+                    والمعرفة العميقة. <br /> الشفافية: نضمن لعملائنا الشفافية التامة في جميع الإجراءات والخطوات
+                    القانونية.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section7" style="margin-top: 100px;"  id="services">
+        <div class="frame-22">
+            <div class="frame-17">
+                <div style="display: flex; flex-direction: column;">
+                    <h3 class="text-wrapper-9 " style="text-align: right; margin-bottom: 10px;">خدماتنا القانونية</h3>
+                    <div style="width: 50px; background-color: #14A9AC; height: 5px; align-self: flex-end;"></div>
+                </div>
+            </div>
+            <p class="text-wrapper-15">:نوفر مجموعة شاملة من الخدمات القانونية التي تشمل</p>
+        </div>
+        <div class="frame-23">
+            <div class="frame-24 anim1">
+                <img src="img/rectangle-3.svg" />
+                <div class="frame-25">
+                    <p class="text-wrapper-16">توفير الحماية القانونية والدفاع عن العملاء</p>
+                    <p class="text-wrapper-17">
+                        نسعى جاهدين لحماية حقوقكم ومصالحكم القانونية، حيث نؤمن لكم الحماية والدفاع عن مصالحكم في مختلف
+                        المواقف.
+                    </p>
+                </div>
+            </div>
+            <div class="frame-24 anim2">
+                <img src="img/rectangle-3-1.svg" />
+                <div class="frame-26">
+                    <p class="text-wrapper-16">التمثيل القانوني أمام المحاكم والهيئات القضائية</p>
+                    <p class="text-wrapper-17">
+                        لدينا فريق من المحامين المتمرسين المؤهلين للدفاع عن حقوقكم ومصالحكم بكل كفاءة وفعالية أمام
+                        المحاكم
+                        والهيئات القضائية على اختلاف درجاتها.
+                    </p>
+                </div>
+            </div>
+            <div class="frame-24 anim3">
+                <img src="img/rectangle-3-2.svg" />
+                <div class="frame-27">
+                    <p class="text-wrapper-16">تقديم الاستشارات القانونية في مختلف المجالات</p>
+                    <p class="text-wrapper-17">
+                        نقدم استشارات قانونية متعمقة في مختلف المجالات القانونية، بما في ذلك القانون المدني والتجاري
+                        والجنائي، بالإضافة إلى قانون العمل، قضايا الأسرة، العقارات، الضرائب، وقانون الملكية الفكرية.
+                    </p>
+                </div>
+            </div>
+            <div class="frame-24 anim4">
+                <img src="img/rectangle-3-3.svg" />
+                <div class="frame-25">
+                    <div class="text-wrapper-16">البحث القانوني</div>
+                    <p class="text-wrapper-17">
+                        نجري بحوثًا قانونية متعمقة لدعم قضاياكم وتقديم أفضل الحلول القانونية، من خلال نتائج بحثية دقيقة
+                        تساعدكم في اتخاذ القرارات.
+                    </p>
+                </div>
+            </div>
+            <div class="frame-24 anim5">
+                <img src="img/rectangle-3-4.svg" />
+                <div class="frame-25">
+                    <div class="text-wrapper-16">التفاوض والتسويات القانونية</div>
+                    <p class="text-wrapper-17">
+                        نسعى جاهدين لحل النزاعات بشكلٍ وديّ، من خلال التفاوض وإجراء التسويات القانونية العادلة بما يحافظ
+                        على
+                        حقوقكم.
+                    </p>
+                </div>
+            </div>
+            <div class="frame-24 anim6">
+                <img src="img/rectangle-3-5.svg" />
+                <div class="frame-25">
+                    <div class="text-wrapper-16">تقديم التوجيه والتوعية القانونية</div>
+                    <p class="text-wrapper-17">
+                        نرشدكم في كل خطوة من الخطوات القانونية ونقدم لكم التوعية اللازمة لحفظ حقوقكم و لضمان اتخاذ
+                        القرارات
+                        السليمة.
+                    </p>
+                </div>
+            </div>
+            <div class="frame-24 anim7">
+                <img src="img/rectangle-3-6.svg" />
+                <div class="frame-25">
+                    <div class="text-wrapper-16">التمثيل القانوني للشركات والمؤسسات
+                        تشمل هذه الخدمات التمثيل في القضايا والاستشارات القانونية الدورية، وذلك لضمان حصوت</div>
+                    <p class="text-wrapper-17">ل الشركات على الدعم القانوني المستمر الذي تحتاجه&nbsp;&nbsp;عبر عقود
+                        سنوية، ربع سنوية، ونصف سنوية. هذه الخدمة متوفرة لمن يرغب في التعاقد معنا.</p>
+
+                </div>
+            </div>
+            <div class="frame-24 anim8">
+                <img src="img/rectangle-3-7.svg" />
+                <div class="frame-25">
+                    <div class="text-wrapper-16">التحكيم ووساطة النزاعات</div>
+                    <p class="text-wrapper-17">
+                        نقدم خدمات التحكيم ووساطة النزاعات لحل النزاعات بشكل سريع وفعال دون الحاجة إلى اللجوء إلى القضاء
+                        وبحرفية عالية.
+                    </p>
+                </div>
+            </div>
+            <div class="frame-24 anim9">
+                <img src="img/rectangle-3-8.svg" />
+                <div class="frame-25">
+                    <div class="text-wrapper-16">صياغة الوثائق القانونية</div>
+                    <p class="text-wrapper-17">
+                        نساعدكم في صياغة العقود، الوثائق، الشروط، اللوائح وغيرها من الوثائق القانونية المحكمة التي تلبي
+                        احتياجاتكم وتحمي حقوقكم.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section8" style="margin-top: 100px;background-color: rgba(223, 223, 223, 0.20);">
+        <div class="frame-22">
+            <div class="frame-17">
+                <div class="text-wrapper-9" style="text-align: right; margin-bottom: 10px;">مجال الخدمة والتخصصات</div>
+                <!-- <div class="rectangle-3"></div> -->
+                <div style="display: flex;">
+                    <div style="width: 50px; background-color: #14A9AC; height: 5px; margin-left: auto;"></div>
+                </div>
+            </div>
+            <p class="text-wrapper-15" style="text-align: right;">
+                مكتب المحامية نوال البكري يقدم الاستشارات القانونية في جميع فروع القانون، ويتميز بتعامله في جميع أعمال
+                المحاماة بما فيها إقامة الدعاوى والترافع في جميع المحاكم السعودية. التخصصات القضائية تشمل
+            </p>
+        </div>
+        <div class="frame-29">
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-8-3.png" />
+                <div class="text-wrapper-18">القضايا المدنية</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-8-1.png" />
+                <div class="text-wrapper-18">القضايا المصرفية</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-8-2.png" />
+                <div class="text-wrapper-18">القضايا الجنائية</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-8-3.png" />
+                <div class="text-wrapper-18">القضايا الإدارية</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-8-4.png" />
+                <div class="text-wrapper-18">قضايا الشركات</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-6" src="img/rectangle-8-5.png" />
+                <div class="text-wrapper-18">القضايا التجارية</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-8-6.png" />
+                <div class="text-wrapper-18">حقوق الملكية الفكرية</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-8-7.png" />
+                <div class="text-wrapper-18">قضايا التأمين والتعويضات</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-9.png" />
+                <div class="text-wrapper-18">قضايا حقوق الإنسان</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-9-1.png" />
+                <div class="text-wrapper-18">قضايا النشر</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-9-2.png" />
+                <div class="text-wrapper-18">قضايا التعويض</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-9-3.png" />
+                <div class="text-wrapper-18">القضايا العمالية</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-9-4.png" />
+                <div class="text-wrapper-18">قضايا الاحوال الشخصيه</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-9-5.png" />
+                <div class="text-wrapper-18">منازعات الاستثمار والتجارة الداخلية والدولية</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-9-6.png" />
+                <div class="text-wrapper-18">منازعات الأوراق التجارية</div>
+            </div>
+            <div class="frame-31">
+                <img class="rectangle-5" src="img/rectangle-9-7.png" />
+                <div class="text-wrapper-18">التسجيلات العقارية</div>
+            </div>
+        </div>
+    </div>
+    <div class="section9" style="margin-top: 100px;" id="why-us" >
+        <div class="left-section mx-5 left">
+            <h1 style="text-align: right; margin-bottom: 25px;">لماذا تختار مكتبنا</h1>
+            <div style="display: flex;">
+                <div style="width: 50px; background-color: #14A9AC; height: 5px; margin-left: auto;"></div>
+            </div>
+            <p style="text-align: right; margin-bottom: 25px;">نقدم لكم افضل الخدمات في المجال القانوني داخل المملكة
+                العربية السعودية، لكن هل تساءلت يوما، لماذا قد تختارنا؟</p>
+            <div class="features">
+                <div class="feature" style="display: flex; flex-direction: row-reverse; gap: 8px; ">
+                    <div style="margin-bottom: 50px;">
+                        <img src="img/frame-1-2.svg" alt="Icon">
+                    </div>
+                    <div>
+                        <h4 style="text-align: right; font-size: 24px; font-weight: 800;">حلول قانونية مبتكرة</h4>
+                        <p>نقدم حلولاً قانونية مبتكرة تلبي احتياجات عملائنا الفريدة.</p>
+                    </div>
+                </div>
+                <div class="feature" style="display: flex; flex-direction: row-reverse; gap: 8px; ">
+                    <div style="margin-bottom: 50px; ">
+                        <img src="img/frame-1-3.svg" alt="Icon">
+                    </div>
+                    <div>
+                        <h2 style="text-align: right; font-size: 24px; font-weight: 800;">خدمة عملاء متميزة</h2>
+                        <p>نحن نلتزم بتقديم تجربة خدمة متميزة لعملائنا، لضمان رضاهم التام.</p>
+                    </div>
+                </div>
+                <div class="feature" style="display: flex; flex-direction: row-reverse; gap: 8px; ">
+                    <div style="margin-bottom: 50px; ">
+                        <img src="img/frame-1-4.svg" alt="Icon">
+                    </div>
+                    <div>
+                        <h2 style="text-align: right; font-size: 24px; font-weight: 800;">التزام تام</h2>
+                        <p>نحن ملتزمون بتحقيق أفضل النتائج لعملائنا بفعالية وكفاءة.</p>
+                    </div>
+                </div>
+                <div class="feature" style="display: flex; flex-direction: row-reverse; gap: 8px; ">
+                    <div style="margin-bottom: 50px; ">
+                        <img src="img/frame-1-5.svg" alt="Icon">
+                    </div>
+                    <div>
+                        <h2 style="text-align: right; font-size: 24px; font-weight: 800;">خبرة واسعة</h2>
+                        <p>يتمتع فريقنا بخبرة واسعة في مختلف القضايا القانونية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-section right" style="margin-bottom: 50px; ">
+
+            <img class="rectangle-7" src="img/rectangle-1-1.png" />
+        </div>
+    </div>
+    <div class="section10" style="margin-top: 100px;" id="team">
+        <div class="team-section">
+            <div class="header mx-5">
+                <h1 style="text-align: right;">فريق العمل</h1>
+                <div style="display: flex;">
+                    <div  class="line"  style="width: 50px; background-color: #14A9AC; height: 5px; margin-left: auto;"></div>
+                </div>
+                <p style="text-align: right;">يتألف فريق عملنا من مجموعة متميزة من المحامين والمستشارين القانونيين ذوي
+                    الخبرة العالية في مختلف التخصصات القانونية. نعمل معًا لتحقيق أفضل النتائج لعملائنا من خلال تحليل
+                    القضايا بدقة وابتكار استراتيجيات قانونية فعالة.</p>
+            </div>
+            <div class="slider">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="img/frame-28-1.png" alt="Member Image">
+                        <p style="text-align: right;">علي الشهري</p>
+                        <h4 style="text-align: right;font-size: 1.1rem;">سكرتير قانوني</h4>
+                        <p style="text-align: right;">سكرتير قانوني يساهم في تنظيم وإدارة الأعمال القانونية اليومية
+                            للمكتب، وتقديم الدعم الإداري والفني للفريق القانوني.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/frame-28-2.png" alt="Member Image">
+                        <p style="text-align: right;">نجود المساعد</p>
+                        <h4 style="text-align: right; font-size: 1.1rem;">محامية ومستشارة قانونية</h4>
+                        <p style="text-align: right;">محامية ومستشارة قانونية تتمتع بخبرة في تقديم الاستشارات القانونية
+                            الشاملة وحل النزاعات القانونية.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/frame-28-3.png" alt="Member Image">
+                        <p style="text-align: right;">عبدالله عبدالرحمن الكيلاني</p>
+                        <h4 style="text-align: right; font-size: 1.1rem; ">شريك مؤسس والرئيس التنفيذي</h4>
+                        <p style="text-align: right;">مستشار قانوني بخبرة متميزة في إدارة المكاتب القانونية وتقديم
+                            الاستشارات القانونية.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/frame-28-4.png" alt="Member Image">
+                        <p style="text-align: right;">المحامية نوال البكري</p>
+                        <h4 style="text-align: right; font-size: 1.1rem;">المؤسس</h4>
+                        <p style="text-align: right;">محامية ومستشارة قانونية بخبرة واسعة في جميع مجالات القضايا
+                            القانونية، بما في ذلك القانون التجاري، الجزائي، الأحوال الشخصية وجميع المطالبات القانونية.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section11 px-5" style="margin-top: 100px;" id="contract" >
+        <div class="team-section">
+            <div class="header">
+                <h1 style="text-align: right; margin-left: auto;">إجراءات التعاقد</h1>
+                <div style="display: flex;">
+                    <div   class="line" style="width: 50px; background-color: #14A9AC; height: 5px; margin-left: auto;"></div>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item x3">
+                    <div class="step-number">3</div>
+                    <h3 style="text-align: right;">تقديم عرض الخدمة وإبرام العقد</h3>
+                    <p style="text-align: right;">نقدم عرضاً للخدمات المطلوبة وبعد الموافقة نوقع العقد، يتضمن نقل
+                        الأعمال والتكاليف والجدول الزمني.</p>
+                </div>
+                <div class="grid-item x2">
+                    <div class="step-number">2</div>
+                    <h3 style="text-align: right;">الاجتماع الأول وتقييم الحالة</h3>
+                    <p style="text-align: right;">نجتمع مع العميل لفهم احتياجاته القانونية وتقييم حالته بناءً على
+                        الوثائق والمعلومات المقدمة.</p>
+                </div>
+
+                <div class="grid-item x1">
+                    <div class="step-number">1</div>
+                    <h3 style="text-align: right;">التواصل الأول</h3>
+                    <p style="text-align: right;">يقوم العميل بالتواصل بنا عبر إيميلنا أو الموقع لتحديد موعد الاجتماع
+                        الأول.</p>
+                </div>
+                <div class="grid-item x6">
+                    <div class="step-number">6</div>
+                    <h3 style="text-align: right;">الدعم المستمر</h3>
+                    <p style="text-align: right;">نواصل تقديم الدعم للعميل حتى بعد إتمام الخدمة للإجابة على أي استفسارات
+                        أو تقديم نصائح إضافية.</p>
+                </div>
+                <div class="grid-item x5">
+                    <div class="step-number">5</div>
+                    <h3 style="text-align: right;">المراجعة وإتمام الخدمة</h3>
+                    <p style="text-align: right;">نراجع العمل المنجز ونتأكد من التزامه بالمعايير المطلوبة، ثم نفحص
+                        تقريرنا النهائي للعميل.</p>
+                </div>
+
+                <div class="grid-item x4">
+                    <div class="step-number">4</div>
+                    <h3 style="text-align: right;">تنفيذ العمل القانوني</h3>
+                    <p style="text-align: right;">نبدأ في تنفيذ الخدمات المتفق عليها مع متابعة دورية وتحديثات للعميل.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section12 ">
+        <img src="img/rectangle-1-2.png" height="500px" width="100%" alt="img">
+    </div>
+    <div class="section13" style="margin-top: 100px;"  id="success-stories">
+        <div class="team-section">
+            <div class="header">
+                <h1 style="text-align: right;">قصص نجاح العملاء</h1>
+                <div class="lin" style="width: 50px; background-color: #14A9AC; height: 5px; margin-left: 97%;"></div>
+
+                <p style="text-align: right;">نحن نفخر بتقديم خدمات قانونية متميزة، وقد حققنا نجاحات عديدة في حماية حقوق
+                    عملائنا. إليكم بعض الشهادات من عملائنا</p>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="stars">
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                                <i class="fa-solid fa-star" style="color:#FFB800"></i>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                            </div>
+                            <h3>عبدالله العسيري</h3>
+                        </div>
+                        <div style="display: inline-block; align-self: flex-end;">
+                            <img src="img/Vector.svg" />
+                        </div>
+                        <p>شهادة أمام الله أنه من أفضل المحاميات أمانة وخلق وإيضاح وبيان، ولا أنسى مدير المكتب عبدالله
+                            الشهري قمة في الأخلاق ومتابعة الموضوع أول بأول.</p>
+                        <div>
+                            <img src="img/quotes-1.svg" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="stars">
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                                <i class="fa-solid fa-star" style="color:#FFB800"></i>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                            </div>
+                            <h3>نجود المساعد</h3>
+                        </div>
+                        <div style="display: inline-block; align-self: flex-end;">
+                            <img src="img/Vector.svg" />
+                        </div>
+                        <p>من أروع المحاميات وأفضلهم وبيشهد الله على ما أقول. صاحبة حكمة ودراية ذات قلم قوي وواضح في
+                            كتابة الصحائف والمذكرات. أنا فخورة فيها. يبدع الله خطاكِ يا أستاذة نوال.</p>
+                        <div>
+                            <img src="img/quotes-1.svg" />
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="stars">
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                                <i class="fa-solid fa-star" style="color:#FFB800"></i>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                            </div>
+                            <h3>أبو نواف المالكي</h3>
+                        </div>
+                        <div style="display: inline-block; align-self: flex-end;">
+                            <img src="img/Vector.svg" />
+                        </div>
+                        <p>إبداع في صياغة الردود والمعرفة بتفاصيل الأنظمة والمصطلحات القضائية. بفضل الله ثم بجهودها تم
+                            رد الدعوى المقامة ضدي. أتمنى لها التوفيق.</p>
+                        <div>
+                            <img src="img/quotes-1.svg" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="stars">
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                                <i class="fa-solid fa-star" style="color:#FFB800"></i>
+                                <i class="fa-solid fa-star" style="color: #FFB800"></i>
+                            </div>
+                            <h3>عبدالله العسيري</h3>
+                        </div>
+                        <div style="display: inline-block; align-self: flex-end;">
+                            <img src="img/Vector.svg" />
+                        </div>
+                        <p>شهادة أمام الله أنه من أفضل المحاميات أمانة وخلق وإيضاح وبيان، ولا أنسى مدير المكتب عبدالله
+                            الشهري قمة في الأخلاق ومتابعة الموضوع أول بأول.</p>
+                        <div>
+                            <img src="img/quotes-1.svg" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+                <!-- Add Navigation -->
+                <!-- <div class="swiper-button-next"></div> -->
+                <!-- <div class="swiper-button-prev"></div> -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="section14 four my-5" style="background-color: rgb(250, 247, 247);" id="contact">
+        <div class="contact-form" dir="rtl">
+            <div class="xx" style="flex: 1;">
+                <div class="form-group" style="margin-bottom: 15px;" id="consultation">
+                    <label for="full-name" style="display: block;">الاسم الكامل</label>
+                    <input type="text" id="fullName" placeholder="ادخل اسمك كاملا" style="width: 100%; padding: 10px;">
+                </div>
+                <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="phone" style="display: block;">رقم الهاتف</label>
+                        <input type="tel" id="phone" placeholder="ادخل رقم الهاتف" style="width: 100%; padding: 10px; text-align: end;">
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label for="email" style="display: block;">البريد الإلكتروني</label>
+                        <input type="email" id="email" placeholder="ادخل البريد الإلكتروني" style="width: 100%; padding: 10px;">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label for="service" style="display: block;">اختيار نوع الخدمة</label>
+                    <select id="service" style="width: 100%; padding: 10px;">
+                        <option value="" disabled selected>اختر نوع الخدمة</option>
+                        <option value="general-legal-consultation">استشارات قانونية عامة</option>
+                        <option value="court-representation">تمثيل قانوني أمام المحاكم</option>
+                        <option value="contract-drafting">صياغة العقود والاتفاقيات</option>
+                        <option value="corporate-legal-consultation">الاستشارات القانونية للشركات</option>
+                        <option value="commercial-cases">القضايا التجارية</option>
+                        <option value="criminal-cases">القضايا الجنائية</option>
+                        <option value="civil-cases">القضايا المدنية</option>
+                        <option value="personal-status-cases">قضايا الأحوال الشخصية</option>
+                        <option value="administrative-cases">القضايا الإدارية</option>
+                        <option value="labor-cases">استشارات قانونية في قضايا العمل والعمال</option>
+                        <option value="other">أخرى</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label for="subject" style="display: block;">عنوان الموضوع</label>
+                    <input type="text" id="subject" placeholder="ادخل عنوان الموضوع" style="width: 100%; padding: 10px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label for="message" style="display: block;">رسالة الموضوع</label>
+                    <textarea id="message" placeholder="اكتب الرسالة" style="width: 100%; padding: 10px; height: 100px;"></textarea>
+                </div>
+                <button type="button" id="submitButton">ارسال</button>
+            </div>
+            <div class="yy contact-info"
+                style="flex: 1;  background-color: #1D2D50; color: white; padding-right: 50px; padding-top: 40px; border-radius: 10px;"
+                dir="rtl">
+                <div id="contact" class="contact-header"
+                    style=" font-weight: bold; margin-bottom: 20px; font-size: 30px;">تواصلوا معنا</div>
+                    <div  class="linee"  style="width: 50px; background-color: #14A9AC;margin-bottom: 10px; height: 5px; margin-left: auto;"></div>
+
+                <div class="contact-item d-flex gap-3" style="margin-bottom: 15px;">
+
+                    <img src="img/MapPin.svg" alt="Location Icon" style="width: 20px; height: 20px;">
+
+                    <div>
+                        <h4 style="font-size: 24px;">العنوان:</h4>
+                        <p style="color: rgb(163, 160, 160); font-size: 16px;">شارع النخبة، حي النخبة، الرياض، المملكة
+                            العربية السعودية</p>
+                    </div>
+
+                </div>
+                <div class="d-flex gap-5">
+                    <div class="contact-item d-flex gap-2" style="margin-bottom: 15px;">
+                        <img src="img/PhoneCall.svg" alt="Phone Icon" style="width: 20px; height: 20px;">
+                        <div>
+                            <h4 style="font-size: 24px;">رقم الهاتف:</h4>
+                            <a style="text-decoration: none; color: rgb(163, 160, 160); font-size: 16px;"
+                                href="tel:+966551161140">966 551 161 140+</a>
+                        </div>
+
+                    </div>
+                    <div class="contact-item d-flex gap-2" style="margin-bottom: 15px;">
+                        <img src="img/DeviceMobileCamera.svg" alt="Mobile Icon" style="width: 20px; height: 20px;">
+                        <div>
+                            <h4 style="font-size: 24px;">رقم الجوال:</h4>
+                            <a style="text-decoration: none; color: rgb(163, 160, 160); font-size: 16px;"
+                                href="tel:+966559420377">966 559 420 377+</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="contact-item d-flex gap-2" style="margin-bottom: 15px;">
+                    <img src="img/EnvelopeSimple.svg" alt="Email Icon" style="width: 20px; height: 20px;">
+                    <div>
+                        <h4 style="font-size: 24px;">البريد الالكتروني:</h4>
+                        <a style="text-decoration: none; color: rgb(163, 160, 160); font-size: 16px;"
+                            href="mailto:info@nawal-lawyer.com">info@nawal-lawyer.com</a>
+                    </div>
+
+                </div>
+                <div class="contact-header" style="color: #FFF;
+
+                text-align: right;
+                font-family: Cairo;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.72px; ">تابعنا على
+                    منصات التواصل الاجتماعي</div>
+                    <div  class="linee"  style="width: 50px; background-color: #14A9AC; height: 5px; margin-left: auto;"></div>
+
+                <div style="display: flex; gap: 10px;">
+                  
+              
+               
+
+                    <a href="https://www.snapchat.com/add/thelawyernawal" target="_blank" class="social-icon">
+                        <i class="fab fa-snapchat" style="font-size: 24px; color: white;"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@lawyer.na" target="_blank" class="social-icon">
+                        <i class="fab fa-tiktok" style="font-size: 24px; color: white;"></i>
+                    </a>
+                   
+                    <a href="https://x.com/nwal_lawyer" target="_blank" class="social-icon">
+                        <img src="img/X.svg" style="width: 24px;height: 24px;" />
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/%D9%85%D8%AD%D8%A7%D9%85%D9%8A%D9%87-%D9%85%D8%B1%D8%AE%D8%B5%D9%87-%D9%86%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%A8%D9%83%D8%B1%D9%8A-51527023a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    target="_blank" class="social-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section15 mt-5 py-5" style="background-color: rgba(223, 223, 223, 0.20);
+  ;padding-right: 50px;">
+        <div class="content gap-3 d-flex" style="flex-direction: row-reverse; flex-wrap: wrap;">
+            <div class="logo-container">
+                <img src="img/1.png" alt="Law Office Logo" width="60px" height="60px">
+            </div>
+            <div class="law-office-info" dir="rtl">
+                <p dir="rtl">مكتب المحامية نوال البكري للمحاماة والاستشارات القانونية هو أحد أبرز
+                    <br>
+                    المكاتب القانونية في المملكة العربية السعودية حيث نسعى لتقديم
+                    <br>
+                    خدمات قانونية عالية الجودة تضم مجموعة واسعة من التخصصات
+                    <br>
+                    القانونية. تأسس مكتبنا من قبل المحامية نوال البكري مع التزام تام بتحقيق العدالة وتوفير الدعم
+                    <br>
+                    القانوني الأمثل لعملائنا مستندين على قيم النزاهة الاحترافية والشفافية.
+                </p>
+                <div class="social-links" dir="rtl">
+
+                
+                    <a href="http://wa.me/966551161140" target="_blank" class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.snapchat.com/add/thelawyernawal" target="_blank" class="social-icon">
+                        <img src="img/SnapchatLogo.svg" alt="Snapchat" style="width: 25px;height: 25px;"></a>
+
+                        <a href="https://www.tiktok.com/@lawyer.na" target="_blank" class="social-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+
+                        <a href="https://x.com/nwal_lawyer" target="_blank" class="social-icon">
+                            <img src="img/XLogo.svg" style="width: 25px;height: 25px;" />
+                        </a>
+
+                    <a href="https://www.linkedin.com/in/%D9%85%D8%AD%D8%A7%D9%85%D9%8A%D9%87-%D9%85%D8%B1%D8%AE%D8%B5%D9%87-%D9%86%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%A8%D9%83%D8%B1%D9%8A-51527023a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                  
+                </div>
+            </div>
+            <div class="d-flex gap-3 hh justify-content-between">
+                <div class="column" dir="rtl">
+                    <h5 class="text-wrapper">نظرة عامة</h5>
+                    <div class="frame-2">
+                        <div class="frame-3">
+                            <img class="caret-left" src="img/caretleft-6.svg" />
+                            <a href="#contact" class="text-wrapper-2">تواصل معنا</a>
+                        </div>
+                        <div class="frame-3">
+                            <img class="caret-left" src="img/caretleft-6.svg" />
+                            <a href="#success-stories" class="text-wrapper-2">قصص نجاح العملاء</a>
+                        </div>
+                        <div class="frame-3">
+                            <img class="caret-left" src="img/caretleft-6.svg" />
+                            <a href="#team" class="text-wrapper-2">فريق العمل</a>
+                        </div>
+                        <div class="frame-3">
+                            <img class="caret-left" src="img/caretleft-6.svg" />
+                            <a href="#about" class="text-wrapper-2">نبذة عنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" dir="rtl">
+                    <h5 class="text-wrapper">كيف نعمل</h5>
+                    <div class="frame-2">
+                        <div class="frame-3">
+                            <img class="caret-left" src="img/caretleft-2.svg" />
+                            <a href="#contract" class="text-wrapper-2 active">إجراءات التعاقد</a>
+                        </div>
+                        <div class="frame-3">
+                            <img class="caret-left" src="img/caretleft-2.svg" />
+                            <a href="#why-us" class="text-wrapper-2">لماذا تختار مكتبنا</a>
+                        </div>
+                        <div class="frame-3">
+                            <img class="caret-left" src="img/caretleft-2.svg" />
+                            <a href="#services" class="text-wrapper-2">خدماتنا القانونية</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column " dir="rtl">
+                <h5 class="text-wrapper">الموقع الجغرافي</h5>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14488.216733910254!2d46.7741065!3d24.7935981!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2eff003d425f1d%3A0x240012a4d6da4f98!2z2YXZg9iq2Kgg2KfZhNmF2K3Yp9mF2YrYqSDZhtmI2KfZhCDYp9mE2KjZg9ix2Yo!5e0!3m2!1sar!2ssa!4v1722110252015!5m2!1sar!2ssa"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer px-5" style="margin-top: 100px; background: #05141E;">
+        <div class="text-wrapper-42">تصميم وبرمجة آير منيو</div>
+        <p class="text-wrapper-43">2024 © جميع الحقوق محفوظة لمكتب الاستاذة نوال للمحاماة</p>
+    </div>
+    <span class="up"><i class="ri-arrow-up-s-line" style="font-size: 20px;"></i></span>
+    <a href="https://wa.me/1234567890"><img src="img/whats.png" style="width: 50px;height: 50px; " class="watts"></a>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
